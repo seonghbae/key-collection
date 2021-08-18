@@ -10,9 +10,7 @@ class SET{
     get size(){ return Object.keys(this.#items).length; }
 
     add(value){
-        if(!this.has(value)){
-            this.#items[value] = value;
-        }
+        if(!this.has(value)) this.#items[value] = value;
         return this.#items;
     }
 
